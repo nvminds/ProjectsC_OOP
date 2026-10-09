@@ -194,7 +194,7 @@ int main()
     Student st1;
     string name, surname, lastname, phone_numb, city, country, school, school_city, school_country, group_numb;
     Birthdate birthdate;
-    st1.readFromFile();
+    st1.readFromFile(); 
     cout << "Enter student name >> "; getline(cin, name);
     st1.setName(name);
     cout << "Enter student surname >> "; getline(cin, surname);

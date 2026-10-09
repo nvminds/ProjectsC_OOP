@@ -83,7 +83,7 @@ public:
     }
 };
 
-int main()
+int main() 
 {
     Point cords;
     int x, y, z;

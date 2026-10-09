@@ -99,7 +99,7 @@ public:
         double summ = 0;
         for (int i = 0; i < 3; i++)
         {
-            summ += marks[i];
+            summ += marks[i]; 
         }
         return (double)summ / 3;
     }

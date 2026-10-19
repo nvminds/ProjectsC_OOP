@@ -10,7 +10,7 @@ class Human
 {
     string name;
     int age;
-    float weight;
+    float weight; 
     static int count_humans;
 public:
     static int getCount()

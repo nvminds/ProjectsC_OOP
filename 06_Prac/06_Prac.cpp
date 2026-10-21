@@ -42,13 +42,13 @@ public:
 #pragma region Methods
     void Print()const
     {
-        if (0 <= hour < 10 and 0 <= minute < 10 and 0 <= second < 10) cout << "Time  0" << hour << ":0" << minute << ":0" << second << endl;
-        else if (0 <= hour < 10 and 0 <= minute < 10) cout << "Time  0" << hour << ":0" << minute << ":" << second << endl;
-        else if (0 <= minute < 10 and 0 <= second < 10) cout << "Time  " << hour << ":0" << minute << ":0" << second << endl;
-        else if (0 <= hour < 10 and 0 <= second < 10) cout << "Time  0" << hour << ":" << minute << ":0" << second << endl;
-        else if (0 <= hour < 10) cout << "Time  0" << hour << ":" << minute << ":" << second << endl;
-        else if (0 <= minute < 10) cout << "Time  " << hour << ":0" << minute << ":" << second << endl;
-        else if (0 <= second < 10) cout << "Time  " << hour << ":" << minute << ":0" << second << endl;
+        if (hour < 10 and minute < 10 and second < 10) cout << "Time  0" << hour << ":0" << minute << ":0" << second << endl;
+        else if (hour < 10 and minute < 10) cout << "Time  0" << hour << ":0" << minute << ":" << second << endl;
+        else if (minute < 10 and second < 10) cout << "Time  " << hour << ":0" << minute << ":0" << second << endl;
+        else if (hour < 10 and second < 10) cout << "Time  0" << hour << ":" << minute << ":0" << second << endl;
+        else if (hour < 10) cout << "Time  0" << hour << ":" << minute << ":" << second << endl;
+        else if (minute < 10) cout << "Time  " << hour << ":0" << minute << ":" << second << endl;
+        else if (second < 10) cout << "Time  " << hour << ":" << minute << ":0" << second << endl;
         else cout << "Time  " << hour << ":" << minute << ":" << second << endl; 
     }
     void Print2()const
@@ -67,7 +67,7 @@ public:
         int total_s = hour * 3600 + minute * 60 + second;
         return total_s;
     }
-    void TimeToHMS(int total_s)
+    void TimeToHMS(long long total_s)
     {
         hour = total_s / 3600;
         minute = total_s / 60 % 60;
@@ -104,7 +104,7 @@ public:
     {
         int total_s1 = TotalSecond();
         int total_s2 = other.TotalSecond();
-        int res(total_s1 * total_s2);
+        long long res((long long)total_s1 * total_s2);
         Time result;
         result.TimeToHMS(res);
         return result;

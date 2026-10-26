@@ -43,7 +43,7 @@ public:
     Airplane operator++(int)
     {
         this->count_passagers++;
-        if (count_passagers <= max_passagers) { return *this; }
+        if (count_passagers <= max_passagers) { return *this; } 
     }
     Airplane operator--()
     {

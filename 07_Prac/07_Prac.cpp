@@ -205,7 +205,7 @@ public:
         float avg = (double)summ / size;
         return avg;
     }
-#pragma endregion
+#pragma endregion 
 
     int operator[](int index)
     {

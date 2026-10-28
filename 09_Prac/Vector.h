@@ -11,6 +11,6 @@ public:
 	Vector& operator=(const Vector& other);
 	~Vector();
 	void PrintVect()const;
-	void AddPoint(Point n);
+	void AddPoint(Point n); 
 };
 

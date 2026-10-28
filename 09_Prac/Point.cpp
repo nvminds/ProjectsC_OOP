@@ -9,7 +9,7 @@ Point::Point(int value)
 {
     this->x = value;
     this->y = value;
-}
+} 
 
 Point::Point(int x, int y)
 {

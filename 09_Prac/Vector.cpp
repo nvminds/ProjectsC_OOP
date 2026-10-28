@@ -12,7 +12,7 @@ Vector::Vector(const Vector& other)
 	this->points = new Point[countPoint];
 	for (int i = 0; i < countPoint; i++)
 	{
-		this->points[i] = other.points[i];
+		this->points[i] = other.points[i]; 
 	}
 }
 

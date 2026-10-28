@@ -13,7 +13,7 @@ int main()
     vect.AddPoint(p3);
     vect.AddPoint(p4);
     vect.PrintVect();
-
+     
 }
 
 #pragma region global funcs

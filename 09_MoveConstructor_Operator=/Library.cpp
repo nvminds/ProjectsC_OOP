@@ -14,7 +14,7 @@ Library::Library(string name, string adress)
 	this->adress = adress;
 	books = nullptr;
 	count_books = 0;
-}
+} 
 
 Library::Library(const Library& other)
 {

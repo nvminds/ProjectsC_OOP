@@ -9,7 +9,7 @@ class Point
 public:
     Point();
     explicit Point(int value);
-    Point(int x, int y);
+    Point(int x, int y); 
     void Print()const;
 #pragma region Математичні оператори
     Point operator +(const Point& other)const;

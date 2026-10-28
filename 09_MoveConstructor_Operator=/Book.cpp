@@ -11,7 +11,7 @@ Book::Book()
 
 void Book::ShowInfo() const
 {
-	cout << "Title : " << title << endl;
+	cout << "Title : " << title << endl; 
 	cout << "Year : " << year << endl;
 	cout << "Author : " << author << endl;
 	cout << "Pages : " << pages << endl;

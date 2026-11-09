@@ -19,7 +19,7 @@ class Student
     PIB pib;
     Date birthdate;
 public:
-    Student() : pib({ "noname", "nosurname", "nolastname" }), birthdate({ 0,0,0 }){}
+    Student() : pib({ "noname", "nosurname", "nolastname" }), birthdate({ 0,0,0 }){} 
     Student(PIB p, Date d)
     {
         this->pib.name = p.name;

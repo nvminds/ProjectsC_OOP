@@ -167,7 +167,7 @@ int main()
 {
     List<string> vises;
     vises.addToTail("USA");
-    vises.addToTail("Canada");
+    vises.addToTail("Canada"); 
     Passport p({ { "Volodymur", "Kravchuk", "Borysovych" }, { 20, 10, 2010 } });
     p.Print();
     cout << endl;

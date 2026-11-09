@@ -10,7 +10,7 @@ protected:
     static const int maxHealth = 100;
 public:
     Enemy(): name("noname"), health(0), strength(0){}
-    Enemy(string n, float s) : name(n), health(maxHealth), strength(s) {}
+    Enemy(string n, float s) : name(n), health(maxHealth), strength(s) {} 
     void Print()const
     {
         cout << "Name : " << name << endl;

@@ -61,7 +61,7 @@ public:
     }
 };
 
-class Student 
+class Person 
 {
     string name; //data members
     int marks[3];
@@ -106,7 +106,7 @@ public:
 };
 int main()
 {
-    Student st;
+    Person st;
     st.setName("Ivan");
     st.setMark(0, 12);
     st.setMark(1, 3);

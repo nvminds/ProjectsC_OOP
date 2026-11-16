@@ -12,7 +12,7 @@ struct Birthdate
     int year;
 };
 
-class Student
+class Person
 {
     string name;
     string surname;
@@ -191,7 +191,7 @@ public:
 
 int main()
 {
-    Student st1;
+    Person st1;
     string name, surname, lastname, phone_numb, city, country, school, school_city, school_country, group_numb;
     Birthdate birthdate;
     st1.readFromFile(); 

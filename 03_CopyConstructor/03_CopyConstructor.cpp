@@ -6,28 +6,28 @@ struct Point
     int x;
     int y;
 };
-class Student
+class Person
 {
     string name;
     int age;
     int* marks;
     int countMarks;
 public:
-    Student()
+    Person()
     {
         name = "no name";
         age = 0;
         marks = nullptr;
         countMarks = 0;
     }
-    Student(string name, int age)
+    Person(string name, int age)
     {
         this->name = name;
         this->age = age;
         marks = nullptr;
         countMarks = 0;
     }
-    Student(const Student &other)
+    Person(const Person &other)
     {
         this->name = other.name;
         this->age = other.age;
@@ -39,7 +39,7 @@ public:
             marks[i] = other.marks[i];
         }
     }
-    ~Student()
+    ~Person()
     {
         if (marks != nullptr)
         {
@@ -80,16 +80,16 @@ public:
 
 int main()
 {
-    Student st;
+    Person st;
     st.Print();
 
-    Student st1("Vasya", 15);
+    Person st1("Vasya", 15);
     st1.Print();
     st1.addMark(5);
     st1.addMark(6);
     st1.addMark(7);
 
-    Student copy = Student(st1);
+    Person copy = Person(st1);
     
     cout << "Original" << endl;
     st1.Print();

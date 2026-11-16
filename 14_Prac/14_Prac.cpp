@@ -14,13 +14,13 @@ struct Date
     int year;
 };
 
-class Student
+class Person
 {
     PIB pib;
     Date birthdate;
 public:
-    Student() : pib({ "noname", "nosurname", "nolastname" }), birthdate({ 0,0,0 }){} 
-    Student(PIB p, Date d)
+    Person() : pib({ "noname", "nosurname", "nolastname" }), birthdate({ 0,0,0 }){} 
+    Person(PIB p, Date d)
     {
         this->pib.name = p.name;
         this->pib.surname = p.surname;
@@ -36,13 +36,13 @@ public:
     }
 };
 
-class Aspirant : public Student
+class Aspirant : public Person
 {
     string project_theme;
     int pages;
 public: 
-    Aspirant(): project_theme("notheme"), pages(0), Student() {}
-    Aspirant(PIB pib, Date d, string th, int p) : project_theme(th), pages(p), Student(pib, d) {}
+    Aspirant(): project_theme("notheme"), pages(0), Person() {}
+    Aspirant(PIB pib, Date d, string th, int p) : project_theme(th), pages(p), Person(pib, d) {}
     int WriteDesertation(int plus_pages)
     {
         pages += plus_pages;
@@ -51,7 +51,7 @@ public:
     void Print()const
     {
         cout << "-----------------Student Desertation Protect-----------------" << endl;
-        Student::Print();
+        Person::Print();
         cout << "Desertation theme : " << project_theme << endl;
         cout << "Desertation pages count : " << pages << endl;
     }

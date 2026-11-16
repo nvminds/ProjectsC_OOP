@@ -13,7 +13,7 @@ struct Birthdate
     }
 };
 
-class Student 
+class Person 
 {
     string name;
     string surname;
@@ -34,7 +34,7 @@ class Student
     }
 public:
     //ctor + TAB
-    Student() //methods
+    Person() //methods
     {
         cout << "Defult constructor" << endl;
         name = "Blank Name";
@@ -46,7 +46,7 @@ public:
         countMarks = 0;
         avgMark = 0;
     }
-    Student(string name, string surname, string lastname)
+    Person(string name, string surname, string lastname)
     {
         cout << "Parametrized constructor" << endl;
         this->name = name;
@@ -108,7 +108,7 @@ public:
         averageMark();
     }
     //~ + TAB destructor
-    ~Student()
+    ~Person()
     {
         cout << "Destructor " << name << endl;
         if (marks != nullptr)
@@ -120,7 +120,7 @@ public:
 
 int main()
 {
-    Student student; //defult constructor
+    Person student; //defult constructor
     //student.Initialization();
     student.Print();
     student.setName("Vasya");
@@ -133,7 +133,7 @@ int main()
     
     student.Print();
 
-    Student s2("Gorila", "Braat", "Dwa");
+    Person s2("Gorila", "Braat", "Dwa");
     s2.AddMark(6);
     s2.AddMark(4);
     s2.AddMark(2);

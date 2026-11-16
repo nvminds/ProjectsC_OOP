@@ -5,7 +5,7 @@ using namespace std;
 
 const char* filename = "Students.txt";
 
-class Student 
+class Person 
 {
     string name;
     int age;
@@ -39,7 +39,7 @@ public:
         return age;
     }
 
-    Student()
+    Person()
     {
         name = "no name";
         age = 0;
@@ -47,7 +47,7 @@ public:
         countMarks = 0;
         avgMark = 0;
     }
-    Student(string name, int age)
+    Person(string name, int age)
     {
         this->name = name;
         this->age = age;
@@ -79,7 +79,7 @@ public:
         marks = temp;
         setAverageMark();
     }
-    ~Student()
+    ~Person()
     {
         cout << "Destructor " << name << endl;
         if (marks != nullptr)
@@ -140,7 +140,7 @@ public:
 
 int main()
 {
-    Student student;
+    Person student;
     string name;
     int age, mark;
     //student.readFromFile();

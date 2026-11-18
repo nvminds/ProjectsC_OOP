@@ -8,9 +8,9 @@ public:
     }
     void Use() {
         cout << "I drive." << endl;
-    }
+    } 
 };
-class Airplane {
+class Airplane { 
 public:
     void Fly() {
         cout << "I fly." << endl;

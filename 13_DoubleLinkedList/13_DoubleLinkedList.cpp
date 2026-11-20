@@ -54,7 +54,7 @@ public:
         Node* newNode = new Node(nullptr, val, head);
         if (IsEmpty())
         {
-            head = newNode;
+            head = tail = newNode;
         }
         else
         {

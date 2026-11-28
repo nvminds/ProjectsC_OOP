@@ -1,0 +1,10 @@
+1;Taras;Melnyk;Oleksiyovych;20;2;2010
+2;Maksym;Hrytsenko;Volodymyrovych;5;7;2008
+3;Oleksandr;Petruk;Ivanovych;14;3;2009
+4;Kirill;Shevchenko;Andriyovych;28;11;2010
+5;Daryna;Kovalenko;Serhiyivna;9;5;2009
+6;Sofiya;Melnyk;Olehivna;17;9;2010
+7;Andriy;Tkachenko;Mykolayovych;3;1;2008
+8;Maria;Lysenko;Viktorivna;22;12;2009
+9;Bohdan;Kravchenko;Pavlovych;11;6;2010
+10;Yulia;Savchenko;Dmytrivna;30;4;2009

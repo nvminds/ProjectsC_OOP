@@ -1,0 +1,6 @@
+1;Math;5
+2;English Language;3
+3;Ukrainian Language;4
+4;History;2
+5;Physics;3
+6;Biology;2
